@@ -1,4 +1,4 @@
-# [T3chFlicks - Smart Buoy](https://t3chflicks.com/shop/kit/smart-buoy)
+# [T3chFlicks - Smart Buoy](https://www.instructables.com/Smart-Buoy/)
 
 
 This repo stores the code for the Smart Buoy Project.
