@@ -2,7 +2,7 @@
 
 
 This repo stores the code for the Smart Buoy Project.
-Check out the blog post at https://t3chflicks.com/shop/kit/smart-buoy
+Check out the [blog post](https://www.instructables.com/Smart-Buoy/).
 
 ![gif_of_buoy](./smart_buoy_thumbnail_square.gif)
 
