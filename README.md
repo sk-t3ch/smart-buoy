@@ -9,6 +9,10 @@
 
 🎖️ Featured by [Adafruit Blogs](https://blog.adafruit.com/2019/07/19/this-smart-buoy-measures-wave-height-period-power-and-more-piday-raspberrypi-raspberry_pi/)
 
+🎖️ Featured by [Arduino](https://www.facebook.com/official.arduino/posts/3480468415312786)
+
+🎖️ Featured by [Instructables](https://www.instructables.com/Smart-Buoy/)
+
 🎖️ Second place [Instructables Sensor Contest](https://www.instructables.com/contest/sensors2019/)
 
 ---
@@ -61,6 +65,31 @@
 * `client/` contains the code for the dashboard which is a VueJS application
 
 * `server/` contains the code for the Flask backend which runs the websockets and database queries as well as generic server stuff.
+
+---
+
+## 💡 Product Showcase
+> ![Product](./teaser.jpg)
+* Environment
+  * Wave measurements
+    * Size
+    * Period
+    * Power
+    * Direction
+    * Water temperature
+  * Air
+    * Temperature
+    * Humidity
+    * Pressure
+  * Position (GPS)
+* Power
+  * Solar powered
+  * Scheduled time for power based on battery voltage
+* Radio Communication (Range 1KM)
+* Interactive dashboard
+  * Realtime view
+  * Graph historical measurements
+
 
 ---
 
