@@ -19,7 +19,7 @@
 
 ## `tutorials/`
 ### Summary
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./blog_post.md)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./summary_blog_post.md)
 
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-summary-602f9db544bb)
 
