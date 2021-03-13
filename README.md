@@ -53,7 +53,7 @@
 ### 4. Waterproofing, Dashboards and Deploy
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/4_build_deploy/blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-waterproofing-dashboards-and-deploy-15c730bf9a3a0)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-waterproofing-dashboards-and-deploy-15c730bf9a3a)
 
 [![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=yUjocnaKXys&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=5)
 
