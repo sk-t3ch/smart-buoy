@@ -21,7 +21,7 @@
 ### Summary
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-summary-602f9db544bb)
 
 [![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=S-XMT6GDWk8&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=1)
 
@@ -30,14 +30,14 @@
 ### 1. Wave and Temperature Measurements
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/1_wave_and_temperature_measurements/blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196)
 
 [![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=AUr0UcNb6B8&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=2)
 
 ### 2. GPS, Radio, and SD card
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/2_gps_radio_sd/blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-gps-radio-nrf24-and-a-sd-card-module-6029af3a69d)
 
 [![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=xz1ix76U28E&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=3&t=160s)
 
@@ -45,15 +45,15 @@
 ### 3. Scheduling Power
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/3_scheduling_power/blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-scheduling-power-to-the-system-81a2675fdac0)
 
 [![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=5guIB8_YIGQ&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=4)
 
 
-### 4. Build and Deploy
+### 4. Waterproofing, Dashboards and Deploy
 [![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/4_build_deploy/blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://medium.com/@t3chflicks/home-devops-pipeline-a-junior-engineers-tale-1-4-336ed07a6ec0)
+[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-waterproofing-dashboards-and-deploy-15c730bf9a3a0)
 
 [![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=yUjocnaKXys&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=5)
 
@@ -69,7 +69,11 @@
 ---
 
 ## 💡 Product Showcase
-> ![Product](./teaser.jpg)
+> ![Product](./teaser_2.png)
+> ![Buoy Electronics](src/buoy/electronics/full_build_labelled.png)
+> ![Buoy Electronics](src/buoy/electronics/raspberrypi_receiver_labelled.png)
+> ![Buoy Dashboard Home](src/server/ss_home.png)
+> ![Buoy Dashboard Trends](src/server/ss_trends.png)
 * Environment
   * Wave measurements
     * Size
