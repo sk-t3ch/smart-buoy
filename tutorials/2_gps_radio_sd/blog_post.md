@@ -1,7 +1,10 @@
 # Smart Buoy — GPS, Radio (NRF24) and a SD Card Module 📍📡💾
 
 This Smart Buoy series charts our (ambitious) attempt to build a scientific buoy that can take meaningful measurements about the sea using off-the-shelf products. This is tutorial two of four — make sure you’re up to date, and if you need a swift introduction to the project, check out our summary.
-Part 1: Making wave and temperature measurements
+
+[**Part 1**: Making wave and temperature measurements](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196)
+
+
 
 In this tutorial, we show show you how to get GPS data, store it on an SD card and send it somewhere using radio.
 
@@ -20,6 +23,7 @@ We did this so we could keep track of the location of our seaborne Buoy. The rad
 * 2 X Radio modules (NRF24L01+) — [Amazon](https://amzn.to/2l6Fq5t)
 
 * 2 X Arduino — [Amazon](https://amzn.to/2jJN7xR)
+> # [🔗 Get The Smart Buoy Code On Github 📔](https://github.com/sk-t3ch/smart-buoy)
 
 ## Tutorial🤖
 
@@ -464,9 +468,12 @@ void sendInfo(){
 
 Thanks for reading this tutorial, this has been the second step in building our Smart Buoy. Check out our next tutorial to see how we schedule power to the system using solar panels, 18650 batteries and RTC module timing circuits.
 
-[**Part 1**: Making wave and temperature measurements](https://link.medium.com/Y3knMlmmBeb)
-[**Part 2**: GPS, Radio (NRF24) and SD Card Module](https://link.medium.com/Oev2Ia1lBeb)
-[**Part 3**: Scheduling Power to the Buoy](https://link.medium.com/vte3uQdmBeb)
-[**Part 4**: Waterproofing, Dashboards and Deploy!](https://link.medium.com/qEv9AIhmBeb)
+[**Part 1**: Making wave and temperature measurements](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196)
+
+[**Part 2**: GPS, Radio (NRF24) and SD Card Module](https://t3chflicks.medium.com/smart-buoy-gps-radio-nrf24-and-a-sd-card-module-6029af3a69d)
+
+[**Part 3**: Scheduling Power to the Buoy](https://t3chflicks.medium.com/smart-buoy-scheduling-power-to-the-system-81a2675fdac0)
+
+[**Part 4**: Waterproofing, Dashboards and Deploy!](https://t3chflicks.medium.com/smart-buoy-waterproofing-dashboards-and-deploy-15c730bf9a3a)
 
 We hope you enjoyed this article. If you like the style, check out [T3chFlicks.org](https://t3chflicks.org/) for more tech-focused educational content as well as all the fun stuff we do on [YouTube](https://www.youtube.com/channel/UC0eSD-tdiJMI5GQTkMmZ-6w) ([Instagram](https://www.instagram.com/t3chflicks/), [Facebook](https://www.facebook.com/t3chflicks), [Twitter](https://twitter.com/t3chflicks)).

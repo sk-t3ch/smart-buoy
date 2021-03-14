@@ -1,9 +1,14 @@
 # Smart Buoy — Waterproofing, Dashboards and Deploy 🚱📊
 
 This Smart Buoy series charts our (ambitious) attempt to build a scientific buoy that can take meaningful measurements about the sea using off-the-shelf products. This is our final tutorial— make sure you’re up to date, and if you need a swift introduction to the project, check out our summary.
-Part 1: Making wave and temperature measurements
-Part 2: GPS, Radio (NRF24) and SD Card Module
-Part 3: Scheduling Power to the Buoy
+
+[**Part 1**: Making wave and temperature measurements](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196)
+
+[**Part 2**: GPS, Radio (NRF24) and SD Card Module](https://t3chflicks.medium.com/smart-buoy-gps-radio-nrf24-and-a-sd-card-module-6029af3a69d)
+
+[**Part 3**: Scheduling Power to the Buoy](https://t3chflicks.medium.com/smart-buoy-scheduling-power-to-the-system-81a2675fdac0)
+
+
 
 In this article, we show you how we designed the casing to protect our Smart Buoy from water, waves and shark attacks. We also explain how we connected it to the base station, which hosted a database and interactive dashboard to explore data in real time.
 
@@ -54,6 +59,7 @@ As this is the final stage for the project, you’re going to need **ALL** the s
 * Floats — [Amazon](https://amzn.to/2lfTZ6R)
 
 * Glue — [Amazon](https://amzn.to/2jFpeaZ)
+> # [🔗 Get The Smart Buoy Code On Github 📔](https://github.com/sk-t3ch/smart-buoy)
 
 ## Tutorial 🤖
 
@@ -151,7 +157,7 @@ With all the sensors on board the Buoy, we were able to measure: wave height, wa
 
 ![](https://cdn-images-1.medium.com/max/2856/1*qHVsjk_rjTPO7PgNehnkfA.png)
 
-We would have loved to measure wave direction and we were super close to making it work, but it was a massive struggle (have a look at tutorial one to see our pain and confusion in more detail) so in the end we ditched it (please help ❤).
+We would have loved to measure wave direction and we were super close to making it work, but it was a massive struggle (have a look at [tutorial one](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196) to see our pain and confusion in more detail) so in the end we ditched it (please help ❤).
 
 ![](https://cdn-images-1.medium.com/max/3460/1*DZQ2NM80oiNUPgJqkNvCeg.png)
 
@@ -213,9 +219,12 @@ However, the Buoy’s purpose was to take meaningful ocean measurements. We only
 
 ![](https://cdn-images-1.medium.com/max/5756/1*fSXEICNqzyHZ8tyZpY5O4A.png)
 
-[**Part 1**: Making wave and temperature measurements](https://link.medium.com/Y3knMlmmBeb)
-[**Part 2**: GPS, Radio (NRF24) and SD Card Module](https://link.medium.com/Oev2Ia1lBeb)
-[**Part 3**: Scheduling Power to the Buoy](https://link.medium.com/vte3uQdmBeb)
-[**Part 4**: Waterproofing, Dashboards and Deploy!](https://link.medium.com/qEv9AIhmBeb)
+[**Part 1**: Making wave and temperature measurements](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196)
+
+[**Part 2**: GPS, Radio (NRF24) and SD Card Module](https://t3chflicks.medium.com/smart-buoy-gps-radio-nrf24-and-a-sd-card-module-6029af3a69d)
+
+[**Part 3**: Scheduling Power to the Buoy](https://t3chflicks.medium.com/smart-buoy-scheduling-power-to-the-system-81a2675fdac0)
+
+[**Part 4**: Waterproofing, Dashboards and Deploy!](https://t3chflicks.medium.com/smart-buoy-waterproofing-dashboards-and-deploy-15c730bf9a3a)
 
 We hope you enjoyed this article. If you like the style, check out [T3chFlicks.org](https://t3chflicks.org/) for more tech-focused educational content as well as all the fun stuff we do on [YouTube](https://www.youtube.com/channel/UC0eSD-tdiJMI5GQTkMmZ-6w) ([Instagram](https://www.instagram.com/t3chflicks/), [Facebook](https://www.facebook.com/t3chflicks), [Twitter](https://twitter.com/t3chflicks)).
