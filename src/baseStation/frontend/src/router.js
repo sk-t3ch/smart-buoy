@@ -14,11 +14,6 @@ export default new Router({
       component: ()=> import('./views/Dashboard.vue'),
     },
     {
-      path: '/about',
-      name: 'about',
-      component: ()=> import('./views/About.vue'),
-    },
-    {
       path: '/trends',
       name: 'trends',
       component: ()=> import('./views/Trends.vue'),
