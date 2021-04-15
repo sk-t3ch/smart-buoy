@@ -20,6 +20,7 @@
     "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
+    "dotenv": "^7.0.0",
     "@vue/cli-plugin-babel": "^3.5.1",
     "@vue/cli-plugin-eslint": "^3.5.1",
     "@vue/cli-service": "^3.5.1",

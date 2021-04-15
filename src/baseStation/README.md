@@ -32,7 +32,7 @@ If you just want to see the data coming from the Buoy to the Raspberry Pi via ra
     1. `use buoyDB`
     1. `db.createCollection('buoyMeasurements')`
 1. Install python dependencies `pip install -r requirements.txt`
-7. Update the fields in `baseStation/env.json` to use your google maps api key (https://developers.google.com/maps/documentation/javascript/get-api-key) and your Raspberry Pis IP address.
+7. Update the fields in `frontend/.env` to use your google maps api key (https://developers.google.com/maps/documentation/javascript/get-api-key) and your Raspberry Pis IP address.
 1. Build the frontend:
     1. `cd frontend`
     1. `npm i`

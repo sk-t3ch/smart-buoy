@@ -139,14 +139,11 @@ export default new Vuex.Store({
       while(measurementData.length > 50){
         measurementData.shift();
       }
-      console.log("EXAMPLE: ", data.dataPoint[0])
-      console.log("EXAMPLE: ", data.dataPoint[1])
       measurementData.push(data.dataPoint);
     }
   },
   actions: {
     "SOCKET_buoy_measurement_update"({ commit }, data){
-      console.log("buoy", data)
       const update = JSON.parse(data);
       const name = update.name;
       let value;
@@ -162,7 +159,6 @@ export default new Vuex.Store({
         name: storeMeasurementName,
         dataPoint: [time, value],
       });
-      console.log("added data point")
     },
 
   }

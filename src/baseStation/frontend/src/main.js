@@ -11,15 +11,14 @@ import SocketIO from 'socket.io-client'
 
 import VueGoogleCharts from 'vue-google-charts'
 import * as VueGoogleMaps from 'vue2-google-maps'
-const env = require("./env.json");
+
 
 Vue.use(VueGoogleCharts)
 Vue.use(VueRouter)
 
-
 Vue.use(VueGoogleMaps, {
   load: {
-    key: env.googleMapsKey,
+    key: process.env.VUE_APP_GOOGLE_MAPS_KEY,
     libraries: 'places',
   },
 });
@@ -33,7 +32,7 @@ export let SocketInstance = SocketIO(null,{
 });
 
 Vue.use(new VueSocketIO({
-    debug: true,
+    // debug: true,
     connection: SocketInstance,
     vuex: {
           store,
