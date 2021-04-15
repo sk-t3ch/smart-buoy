@@ -12,7 +12,7 @@ Flask-socketio is used for communication with the frontend via websockets.
 
 ![trends](../../trends.png)
 
-If you want to play around with the dashboard without a Smart Buoy setup then just run `python fake_data_app.py`, and you should be able to see the data coming in.
+If you want to play around with the dashboard without a Smart Buoy setup then just run `python mock_app.py`, and you should be able to see the data coming in.
 
 Also for development purposes there is a `populate_db.py` script which does what is says on the tin.
 
