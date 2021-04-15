@@ -93,7 +93,6 @@ for the dashboard which is a VueJS application
   * Realtime view
   * Graph historical measurements
 
-![Buoy](./buoy.svg)
 ---
 
 This project was created by [T3chFlicks](https://t3chflicks.org) - A tech focused education and services company.

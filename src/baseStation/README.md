@@ -20,7 +20,7 @@ If you just want to see the data coming from the Buoy to the Raspberry Pi via ra
 
 ---
 
-### Step By Step Instructions
+### Get Running
 1. Put a raspian image from [here](https://www.raspberrypi.org/downloads/) onto your pi sd card using [etcher](https://www.balena.io/etcher/).
 1. Plug in the *nRF24L01* before turning on as in the diagram in the electronics folder.
 1. SSH into your pi (for the rest of the instructions stay in a terminal) and set up as usual [tutorial](https://www.youtube.com/watch?v=wvxCNQ5AYPg).
@@ -33,9 +33,10 @@ If you just want to see the data coming from the Buoy to the Raspberry Pi via ra
     1. `db.createCollection('buoyMeasurements')`
 1. Install python dependencies `pip install -r requirements.txt`
 7. Update the fields in `baseStation/env.json` to use your google maps api key (https://developers.google.com/maps/documentation/javascript/get-api-key) and your Raspberry Pis IP address.
-1. Inside the client directory:
+1. Build the frontend:
+    1. `cd frontend`
     1. `npm i`
-    2. `npm run build`
+    1. `npm run build`
 
 1. Start the server `python app.py`
 
