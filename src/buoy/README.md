@@ -1,5 +1,3 @@
-# [T3chFlicks - Smart Buoy](https://t3chflicks.com/shop/kit/smart-buoy)
-
 ### Buoy Stuff
 
 `smart_buoy/` contains the Arduino code.
