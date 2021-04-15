@@ -8,63 +8,63 @@ export default new Vuex.Store({
     measurements: {
       location:{
         name: 'Location',
-        data: [[]],
+        data: [[new Date(), [12.015089, -61.697963]]],
         unit: '',
         icon: 'mdi-crosshairs-gps',
         trend: false,
       },
       air_pressure: {
         name: 'Air Pressure',
-        data: [[]],
+        data: [[new Date(), 5.1]],
         unit: 'KPa',
         icon: 'mdi-weather-windy',
         trend: true
       },
       wave_height:{
         name: 'Wave Height',
-        data: [[]],
+        data: [[new Date(), 4.1]],
         unit: 'm',
         icon: 'mdi-current-ac',
         trend: true
       },
       wave_period:{
         name: 'Wave Period',
-        data: [[]],
+        data: [[new Date(), 3.2]],
         unit: 's',
         icon: 'mdi-current-ac',
         trend: true
       },
       wave_power:{
         name: 'Wave Power',
-        data: [[]],
+        data: [[new Date(), 25.8]],
         unit: 'kW/m',
         icon: 'mdi-current-ac',
         trend: true
       },
       air_temperature: {
         name: 'Air Temperature',
-        data: [[]],
+        data: [[new Date(), 32.1]],
         unit: '°C',
         icon: 'mdi-thermometer',
         trend: true
       },
       water_temperature: {
         name: 'Water Temperature',
-        data: [[]],
+        data: [[new Date(), 16.4]],
         unit: '°C',
         icon: 'mdi-thermometer',
         trend: true
       },
       voltage: {
         name: 'Voltage',
-        data: [[]],
+        data: [[new Date(), 5.4]],
         unit: 'V',
         icon: 'mdi-battery',
         trend: true
       },
       current: {
         name: 'Current',
-        data: [[]],
+        data: [[new Date(), -200]],
         unit: 'mA',
         icon: 'mdi-power-plug',
         trend: true
@@ -82,7 +82,7 @@ export default new Vuex.Store({
     recentUpdates: state => {
       let result = [];
       for (const measurement of Object.values(state.measurements)) {
-        measurement.data.forEach( dataPoint =>{
+        measurement.data.forEach( dataPoint => {
           if (dataPoint.length < 1) return;
           try{
             result.push({
@@ -115,7 +115,7 @@ export default new Vuex.Store({
     },
     mostRecentMeasurement: state => (name) => {
       let measurementInfo = state.measurements[name];
-      if(measurementInfo.data.length > 1){
+      if(measurementInfo.data.length > 0 && measurementInfo.data[0].length > 0){
         const data_point = measurementInfo.data.slice(-1)[0];
         return {time: data_point[0], value:data_point[1], unit: measurementInfo.unit, icon:measurementInfo.icon };
       }
@@ -133,16 +133,20 @@ export default new Vuex.Store({
       try {
         measurementData = state.measurements[data.name].data
       } catch (e) {
+        console.log("ERROR: ", e)
         return
       }
       while(measurementData.length > 50){
         measurementData.shift();
       }
+      console.log("EXAMPLE: ", data.dataPoint[0])
+      console.log("EXAMPLE: ", data.dataPoint[1])
       measurementData.push(data.dataPoint);
     }
   },
   actions: {
     "SOCKET_buoy_measurement_update"({ commit }, data){
+      console.log("buoy", data)
       const update = JSON.parse(data);
       const name = update.name;
       let value;
@@ -158,6 +162,7 @@ export default new Vuex.Store({
         name: storeMeasurementName,
         dataPoint: [time, value],
       });
+      console.log("added data point")
     },
 
   }

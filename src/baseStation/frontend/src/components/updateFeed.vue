@@ -7,18 +7,20 @@
       app
       class="primary"
     >
-    <v-card-title primary-title centered class="display-1 white--text font-weight-black font-italic">
+    <v-card-title primary-title centered class="text-xl-h4 text-sm-h3 white--text font-weight-black font-italic">
       Updates
     </v-card-title>
-      <v-list>
-        <v-list-tile v-for="update in $store.getters.recentUpdates"
-        :key="update.time"
+      <v-list class="ma-3">
+        <v-list-item v-for="update in $store.getters.recentUpdates"
+        :key="update.icon + update.time + Math.random()"
+        class="ma-1"
                   >
 
-          <v-list-tile-content>
+          <v-list-item-content>
             <div class="text-xs-center">
-              <v-chip close @input="remove_update(update.time)"
-              class="secondary"
+              <v-chip
+              color="secondary"
+              class="black--text"
               >
                 <v-avatar>
 
@@ -27,8 +29,8 @@
                 {{ update.value }}{{ update.unit }}  @ {{ update.time }}
               </v-chip>
             </div>
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 </template>
@@ -38,14 +40,5 @@
 
 export default{
   props: ['value'],
-  methods:{
-    remove_update: function(time){
-      const index_to_remove = this.updates.findIndex(el=>el.time===time)
-      this.updates.splice(index_to_remove, 1)
-    }
-  },
-  data(){
-    return {}
-  },
 }
 </script>

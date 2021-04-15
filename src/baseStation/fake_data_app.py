@@ -7,15 +7,18 @@ from datetime import date, datetime, timedelta
 from threading import Thread
 import random
 
+# THREAD SOCKETS
+import eventlet
+eventlet.monkey_patch() 
 
 # SETUP FLASK
 app = Flask(__name__,
-            static_folder = "./public/static",
-            template_folder = "./public")
+            static_folder = "./frontend/dist/static",
+            template_folder = "./frontend/dist")
 CORS(app)
 app.config['SECRET_KEY'] = 'secret!'
 app.config['DEBUG'] = True
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 examples = [
   {'name': 'air temperature','range': range(25,30)},
@@ -45,6 +48,7 @@ def radio_update():
         'time': str(datetime.now())
       }
       socketio.emit('buoy_measurement_update', json.dumps(msg))
+    #   print(msg)
       time.sleep(TIME_DELAY)
 
 
@@ -94,9 +98,8 @@ def perdelta(start, end, delta):
     yield curr
     curr += delta
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def catch_all(path):
+@app.route('/')
+def index():
     return render_template("index.html")
 
 if __name__ == '__main__':
