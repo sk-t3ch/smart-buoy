@@ -15,56 +15,56 @@ export default new Vuex.Store({
       },
       air_pressure: {
         name: 'Air Pressure',
-        data: [[new Date(), 5.1]],
+        data: [[new Date(), 5.1], [new Date(), 5.1]],
         unit: 'KPa',
         icon: 'mdi-weather-windy',
         trend: true
       },
       wave_height:{
         name: 'Wave Height',
-        data: [[new Date(), 4.1]],
+        data: [[new Date(), 4.1], [new Date(), 4.1]],
         unit: 'm',
         icon: 'mdi-current-ac',
         trend: true
       },
       wave_period:{
         name: 'Wave Period',
-        data: [[new Date(), 3.2]],
+        data: [[new Date(), 3.2], [new Date(), 3.2]],
         unit: 's',
         icon: 'mdi-current-ac',
         trend: true
       },
       wave_power:{
         name: 'Wave Power',
-        data: [[new Date(), 25.8]],
+        data: [[new Date(), 25.8], [new Date(), 25.8]],
         unit: 'kW/m',
         icon: 'mdi-current-ac',
         trend: true
       },
       air_temperature: {
         name: 'Air Temperature',
-        data: [[new Date(), 32.1]],
+        data: [[new Date(), 32.1], [new Date(), 32.1]],
         unit: '°C',
         icon: 'mdi-thermometer',
         trend: true
       },
       water_temperature: {
         name: 'Water Temperature',
-        data: [[new Date(), 16.4]],
+        data: [[new Date(), 16.4], [new Date(), 16.4]],
         unit: '°C',
         icon: 'mdi-thermometer',
         trend: true
       },
       voltage: {
         name: 'Voltage',
-        data: [[new Date(), 5.4]],
+        data: [[new Date(), 5.4], [new Date(), 5.4]],
         unit: 'V',
         icon: 'mdi-battery',
         trend: true
       },
       current: {
         name: 'Current',
-        data: [[new Date(), -200]],
+        data: [[new Date(), -200], [new Date(), -200]],
         unit: 'mA',
         icon: 'mdi-power-plug',
         trend: true
