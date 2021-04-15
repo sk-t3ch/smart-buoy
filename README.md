@@ -1,5 +1,7 @@
 # [T3chFlicks](https://t3chflicks.org): Smart Buoy
 
+[![Generic badge](https://img.shields.io/badge/Live-Demo-red.svg)](https://smart-buoy.t3chflicks.org)
+
 > A complete ocean characteristic measuring and analytics system.
 ![gif_of_buoy](./smart_buoy_thumbnail_square.gif)
 
