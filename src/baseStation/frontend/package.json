@@ -1,5 +1,5 @@
 {
-  "name": "Smart_Buoy_Dashboard",
+  "name": "SmartBuoy",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,18 +15,19 @@
     "vue-socket.io": "^3.0.7",
     "vue-websocket": "^0.2.3",
     "vue2-google-maps": "^0.10.6",
-    "vuetify": "^1.5.7",
+    "vuetify": "^2.4.0",
     "vuex": "^3.0.1",
     "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
-    "@mdi/font": "^3.5.95",
     "@vue/cli-plugin-babel": "^3.5.1",
     "@vue/cli-plugin-eslint": "^3.5.1",
     "@vue/cli-service": "^3.5.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.2.2",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "vue-cli-plugin-vuetify": "^0.4.6",

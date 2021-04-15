@@ -28,7 +28,7 @@
             <template v-slot:activator="{ on }">
               <v-text-field
                 v-model="startDate"
-                prepend-icon="event"
+                prepend-icon="mdi-calendar-search"
                 readonly
                 v-on="on"
               ></v-text-field>
@@ -52,7 +52,7 @@
             <template v-slot:activator="{ on }">
               <v-text-field
                 v-model="endDate"
-                prepend-icon="event"
+                prepend-icon="mdi-calendar-search"
                 readonly
                 v-on="on"
               ></v-text-field>
@@ -96,7 +96,7 @@
                  color="pink"
                  @click="downloadCSV"
                >
-                 <v-icon>save_alt</v-icon>
+                 <v-icon>mdi-download</v-icon>
                </v-btn>
 
             </v-card-actions>
@@ -108,7 +108,6 @@
         <v-spacer></v-spacer>
       </v-layout>
     </v-container>
-    <br></br>
   </div>
 </template>
 
@@ -125,18 +124,6 @@ export default {
       chosenMeasurements: [],
       measurements: this.prettifyMeasurementNames(),
       gChartData: [['Time', 'Value'], ['12:00:01', 5]],
-      // chartOptions: {
-      //   chart: {
-      //     title: this.name,
-      //     subtitle: this.name,
-      //   },
-      //   hAxis: {
-      //     format: 'M/d/yy',
-      //     // gridlines: {count: 15}
-      //   },
-      //   colors: [this.$vuetify.theme.primary.base, this.$vuetify.theme.secondary],
-      //   backgroundColor: this.$vuetify.theme.accent,
-      // },
       startDate: this.getYesterday(),
       endDate: new Date().toISOString().substr(0, 10),
       startDateMenu: false,
@@ -147,8 +134,7 @@ export default {
           subtitle: this.name,
 
         },
-        // colors: ['#ffffff', '#029900'],
-        backgroundColor: this.$vuetify.theme.accent,
+        backgroundColor: this.$vuetify.theme.themes.light.accent,
       },
       chartData: [
         ['Date', 'Value'],

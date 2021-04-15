@@ -62,9 +62,8 @@
 ## `src/` - contains the source code for the whole project
 * `buoy/` contains the code which runs on an Arduino inside the Buoy, as well as the build files (3d model, schematic etc).
 
-* `client/` contains the code for the dashboard which is a VueJS application
-
-* `server/` contains the code for the Flask backend which runs the websockets and database queries as well as generic server stuff.
+* `baseStation/` contains the code for the server, database, and dashboard.
+for the dashboard which is a VueJS application
 
 ---
 
@@ -72,8 +71,8 @@
 > ![Product](./teaser_2.png)
 > ![Buoy Electronics](src/buoy/electronics/full_build_labelled.png)
 > ![Buoy Electronics](src/buoy/electronics/raspberrypi_receiver_labelled.png)
-> ![Buoy Dashboard Home](src/server/ss_home.png)
-> ![Buoy Dashboard Trends](src/server/ss_trends.png)
+> ![Buoy Dashboard Home](dashboard.png)
+> ![Buoy Dashboard Trends](trends.png)
 * Environment
   * Wave measurements
     * Size

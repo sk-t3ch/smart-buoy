@@ -1,4 +1,5 @@
 # [T3chFlicks - Smart Buoy](https://t3chflicks.com/shop/kit/smart-buoy)
+
 ## Server
 
 This folder contains the code for the running the server for the

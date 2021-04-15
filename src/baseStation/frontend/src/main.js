@@ -1,16 +1,14 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
-import 'vuetify/src/stylus/app.styl'
-import '@mdi/font/css/materialdesignicons.css'
-import colors from 'vuetify/es5/util/colors'
-//
 import App from './App.vue'
+import vuetify from './plugins/vuetify';
 
 
 import VueRouter from 'vue-router'
 import router from './router'
 import store from './store'
 import VueSocketIO from 'vue-socket.io';
+import SocketIO from 'socket.io-client'
+
 import VueGoogleCharts from 'vue-google-charts'
 import * as VueGoogleMaps from 'vue2-google-maps'
 const env = require("./env.json");
@@ -26,9 +24,17 @@ Vue.use(VueGoogleMaps, {
   },
 });
 
+
+export let SocketInstance = SocketIO(null,{
+  autoConnect: false,
+  transports: ['polling'],
+  host: '0.0.0.0',
+  port: 5000
+});
+
 Vue.use(new VueSocketIO({
-    // debug: true,
-    connection: `http://${env.ipAddress}:5000`,
+    debug: true,
+    connection: SocketInstance,
     vuex: {
           store,
           actionPrefix: "SOCKET_",
@@ -36,25 +42,10 @@ Vue.use(new VueSocketIO({
         },
 }))
 
-Vue.use(Vuetify, {
-  iconfont: 'md' || 'mdi',
-  // theme: {
-  //   primary: "#ff0000",
-  //   secondary: "#ffce00",
-  //   accent: "#029900",
-  // },
-  theme:{
-    primary: colors.cyan,
-    accent: colors.teal.accent2,
-    secondary: colors.lime.accent1,
-  }
-})
-
-
 Vue.config.productionTip = false
 
-
 new Vue({
+  vuetify,
   router,
   store,
   render: h => h(App)

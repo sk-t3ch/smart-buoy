@@ -14,12 +14,12 @@ import time
 
 # SETUP FLASK
 app = Flask(__name__,
-            static_folder = "./public/static",
-            template_folder = "./public")
+            static_folder = "./frontend/dist/static",
+            template_folder = "./frontend/dist")
 CORS(app)
 app.config['SECRET_KEY'] = 'secret!'
 app.config['DEBUG'] = True
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 # SETUP RADIO
 GPIO.setmode(GPIO.BCM)
@@ -174,9 +174,8 @@ def trendsData():
     else:
         return  json.dumps({'message': 'okay'}), 200
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def catch_all(path):
+@app.route('/')
+def index():
     return render_template("index.html")
 
 if __name__ == '__main__':
