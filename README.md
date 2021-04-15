@@ -89,9 +89,10 @@ for the dashboard which is a VueJS application
   * Solar powered
   * Scheduled time for power based on battery voltage
 * Radio Communication (Range 1KM)
-* Interactive dashboard
+* Interactive dashboard [![Generic badge](https://img.shields.io/badge/Live-Demo-red.svg)](https://smart-buoy.t3chflicks.org)
   * Realtime view
   * Graph historical measurements
+
 
 ---
 

@@ -3,6 +3,8 @@
 This folder contains the code for the running the server for the
 Smart Buoy Dashboard.
 
+[![Generic badge](https://img.shields.io/badge/Live-Demo-red.svg)](https://smart-buoy.t3chflicks.org)
+
 This code should be run on a Raspberry Pi, which has Python3 and mongoDB installed.
 
 It uses Flask as a web server and communicates with the radio module (NRF24) and a mongo database.
