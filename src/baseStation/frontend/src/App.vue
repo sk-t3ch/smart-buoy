@@ -4,7 +4,7 @@
     <v-main class="accent">
       <router-view> </router-view>
     </v-main>
-    <v-footer app height="70" class="topped">
+    <v-footer app class="topped">
       <v-spacer />
       <v-col cols="auto" class="text-none white--text">
         <v-btn
