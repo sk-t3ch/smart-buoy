@@ -41,4 +41,5 @@ If you just want to see the data coming from the Buoy to the Raspberry Pi via ra
     1. `npm run build`
 
 1. Start the server `python app.py`
+1. Go to your browser on your pi's IP address or to the [![Generic badge](https://img.shields.io/badge/Live-Demo-red.svg)](https://smart-buoy.t3chflicks.org) and enter your IP address to connect the dashboard to the Pi and measurements should begin to stream in.
 
