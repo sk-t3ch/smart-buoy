@@ -13,3 +13,4 @@ python-engineio==3.13.2
 python-socketio==4.6.1
 six==1.15.0
 Werkzeug==1.0.1
+pymongo
