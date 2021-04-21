@@ -78,7 +78,6 @@ export default new Vuex.Store({
     trendMeasurementNames: state => {
       return Object.entries(state.measurements).filter(el=>el[1].trend).map(el=>el[0]);
     },
-    // gets the side panel showing updates
     recentUpdates: state => {
       let result = [];
       for (const measurement of Object.values(state.measurements)) {
@@ -133,7 +132,6 @@ export default new Vuex.Store({
       try {
         measurementData = state.measurements[data.name].data
       } catch (e) {
-        console.log("FUVK ", state.measurements[data.name])
         console.log("ERROR: ", e)
         return
       }
@@ -147,13 +145,7 @@ export default new Vuex.Store({
     "SOCKET_buoy_measurement_update"({ commit }, data){
       const update = JSON.parse(data);
       const name = update.name;
-      let value;
-      if (name !== 'location'){
-        value = parseFloat(update.value);
-      }
-      else{
-        value = update.value;
-      }
+      const value = name !== 'location' ? parseFloat(update.value): update.value;
       const time = new Date(update.time);
       const storeMeasurementName = name.replace(' ', '_');
       commit('addDataPoint', {

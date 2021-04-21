@@ -114,7 +114,7 @@ def send_and_save(measurement):
     #     print("saving")
     #     measurement_collection.insert_one(measurement)
     socketio.emit('buoy_measurement_update', json.dumps(measurement))
-    # measurement_collection.insert_one(measurement)
+    measurement_collection.insert_one(measurement)
 
 def get_results(start_date, end_date, td, measurements):
     """
