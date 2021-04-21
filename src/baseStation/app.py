@@ -107,8 +107,8 @@ def send_and_save(measurement):
     """
     sends measurements to front end and saves them in the mongodb
     """
-    # if '_id' not in measurement.keys():
-    #     print("doing the thing")
+    if '_id' in measurement.keys():
+        measurement.pop('_id')
     #     socketio.emit('buoy_measurement_update', json.dumps(measurement))
     # else:
     #     print("saving")
