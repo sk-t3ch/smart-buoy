@@ -32,7 +32,7 @@ export let SocketInstance = SocketIO(null,{
 });
 
 Vue.use(new VueSocketIO({
-    debug: true,
+    // debug: true,
     connection: SocketInstance,
     vuex: {
           store,
