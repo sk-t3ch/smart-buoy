@@ -13,13 +13,6 @@ export default new Vuex.Store({
         icon: 'mdi-crosshairs-gps',
         trend: false,
       },
-      air_pressure: {
-        name: 'Air Pressure',
-        data: [[new Date(), 5.1], [new Date(), 5.1]],
-        unit: 'KPa',
-        icon: 'mdi-weather-windy',
-        trend: true
-      },
       wave_height:{
         name: 'Wave Height',
         data: [[new Date(), 4.1], [new Date(), 4.1]],
