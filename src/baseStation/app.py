@@ -109,10 +109,6 @@ def send_and_save(measurement):
     """
     if '_id' in measurement.keys():
         measurement.pop('_id')
-    #     socketio.emit('buoy_measurement_update', json.dumps(measurement))
-    # else:
-    #     print("saving")
-    #     measurement_collection.insert_one(measurement)
     socketio.emit('buoy_measurement_update', json.dumps(measurement))
     measurement_collection.insert_one(measurement)
 

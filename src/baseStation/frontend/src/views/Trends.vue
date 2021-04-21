@@ -194,8 +194,9 @@ export default {
         payload.startDate = this.startDate;
         payload.endDate = this.endDate;
         payload.granularity = this.granularity;
+        const baseURL = this.$store.state.piUrl;
         try{
-          const rawResponse = await fetch('http://0.0.0.0:5000/trends', {
+          const rawResponse = await fetch(`${baseURL}/trends`, {
             method: 'POST',
             headers: {
               'Accept': 'application/json',

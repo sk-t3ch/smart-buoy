@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    piUrl: 'http://localhost:5000',
     measurements: {
       location:{
         name: 'Location',
@@ -127,6 +128,12 @@ export default new Vuex.Store({
 
   },
   mutations: {
+    updatePiUrl(state, piUrl){
+      state.piUrl = piUrl;
+      this._vm.$socket.close();
+      this._vm.$socket.io.uri = piUrl
+      this._vm.$socket.open();
+    },
     addDataPoint(state, data){
       let measurementData;
       try {
