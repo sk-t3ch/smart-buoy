@@ -68,7 +68,7 @@ def radio_update():
             msg = {
             'name': "location",
             'value': [measurements.latitude, measurements.longitude],
-            'datetime': datetime.strptime(dt,'%d%m%y %H%M%S').isoformat()
+            'time': datetime.strptime(dt,'%d%m%y %H%M%S').isoformat()
             }
             send_and_save(msg)
             msg['name'] = 'current'

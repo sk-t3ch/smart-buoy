@@ -83,6 +83,7 @@ export default new Vuex.Store({
       let result = [];
       for (const measurement of Object.values(state.measurements)) {
         measurement.data.forEach( dataPoint => {
+          console.log("dataPoint", dataPoint)
           if (dataPoint.length < 1) return;
           try{
             result.push({
