@@ -82,6 +82,7 @@ export default new Vuex.Store({
     recentUpdates: state => {
       let result = [];
       for (const measurement of Object.values(state.measurements)) {
+        console.log("measurement", measurement)
         measurement.data.forEach( dataPoint => {
           console.log("dataPoint", dataPoint)
           if (dataPoint.length < 1) return;
@@ -134,6 +135,8 @@ export default new Vuex.Store({
       try {
         measurementData = state.measurements[data.name].data
       } catch (e) {
+        console.log("FUVK ", data.name)
+        console.log("FUVK ", state.measurements[data.name])
         console.log("ERROR: ", e)
         return
       }

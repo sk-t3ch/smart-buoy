@@ -95,10 +95,10 @@ def radio_update():
             msg['name'] = 'wave power'
             msg['value'] = measurements.wave_power
             send_and_save(msg)
-            msg['name'] = 'water temp'
+            msg['name'] = 'water temperature'
             msg['value'] = measurements.water_temp
             send_and_save(msg)
-            msg['name'] = 'air temp'
+            msg['name'] = 'air temperature'
             msg['value'] = measurements.air_temp
             send_and_save(msg)
 
