@@ -69,6 +69,13 @@ export default new Vuex.Store({
         icon: 'mdi-power-plug',
         trend: true
       },
+      wait_time: {
+        name: 'Wait Time',
+        data: [[new Date(), 2], [new Date(), 2]],
+        unit: 's',
+        icon: 'mdi-camera-timer',
+        trend: true
+      },
     }
   },
   getters: {
