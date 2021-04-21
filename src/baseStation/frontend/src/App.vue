@@ -30,6 +30,9 @@ export default {
   components: {
     NavBar,
   },
+  created(){
+    this.$store.commit('updatePiUrl', location.origin)
+  }
 };
 </script>
 <style scoped>

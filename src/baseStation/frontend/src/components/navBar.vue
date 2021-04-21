@@ -92,14 +92,9 @@ export default {
       this.statusIcon = "mdi-alert-circle";
     },
   },
-  mounted() {
-    // debugger;
-    console.log(this.$sockets);
-    // this.$refs.addressbar.focus();
-  },
   data() {
     return {
-      piUrl: null,
+      piUrl: this.$store.state.piUrl,
       piUrlSet: true,
       routes: this.$router.options.routes.map((route) => ({
         name: route.name,
@@ -121,12 +116,10 @@ export default {
       this.$refs.addressbar.blur();
       const urlObj = new URL(this.piUrl);
       console.log("urlObj", urlObj);
-      this.$socket.io.uri = this.piUrl
-      this.$socket.open();
+      this.$store.commit('updatePiUrl', this.piUrl)
     },
     editUrl() {
       this.piUrlSet = false
-      this.$socket.close();
     },
   },
 };

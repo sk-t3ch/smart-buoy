@@ -5,6 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    piUrl: 'http://localhost:5000',
     measurements: {
       location:{
         name: 'Location',
@@ -12,13 +13,6 @@ export default new Vuex.Store({
         unit: '',
         icon: 'mdi-crosshairs-gps',
         trend: false,
-      },
-      air_pressure: {
-        name: 'Air Pressure',
-        data: [[new Date(), 5.1], [new Date(), 5.1]],
-        unit: 'KPa',
-        icon: 'mdi-weather-windy',
-        trend: true
       },
       wave_height:{
         name: 'Wave Height',
@@ -69,6 +63,13 @@ export default new Vuex.Store({
         icon: 'mdi-power-plug',
         trend: true
       },
+      wait_time: {
+        name: 'Wait Time',
+        data: [[new Date(), 2], [new Date(), 2]],
+        unit: 's',
+        icon: 'mdi-camera-timer',
+        trend: true
+      },
     }
   },
   getters: {
@@ -78,7 +79,6 @@ export default new Vuex.Store({
     trendMeasurementNames: state => {
       return Object.entries(state.measurements).filter(el=>el[1].trend).map(el=>el[0]);
     },
-    // gets the side panel showing updates
     recentUpdates: state => {
       let result = [];
       for (const measurement of Object.values(state.measurements)) {
@@ -128,6 +128,12 @@ export default new Vuex.Store({
 
   },
   mutations: {
+    updatePiUrl(state, piUrl){
+      state.piUrl = piUrl;
+      this._vm.$socket.close();
+      this._vm.$socket.io.uri = piUrl
+      this._vm.$socket.open();
+    },
     addDataPoint(state, data){
       let measurementData;
       try {
@@ -146,13 +152,7 @@ export default new Vuex.Store({
     "SOCKET_buoy_measurement_update"({ commit }, data){
       const update = JSON.parse(data);
       const name = update.name;
-      let value;
-      if (name !== 'location'){
-        value = parseFloat(update.value);
-      }
-      else{
-        value = update.value;
-      }
+      const value = name !== 'location' ? parseFloat(update.value): update.value;
       const time = new Date(update.time);
       const storeMeasurementName = name.replace(' ', '_');
       commit('addDataPoint', {

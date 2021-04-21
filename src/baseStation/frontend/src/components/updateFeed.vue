@@ -11,7 +11,7 @@
       Updates
     </v-card-title>
       <v-list class="ma-3">
-        <v-list-item v-for="update in $store.getters.recentUpdates"
+        <v-list-item v-for="update in recentUpdates"
         :key="update.icon + update.time + Math.random()"
         class="ma-1"
                   >
@@ -40,5 +40,10 @@
 
 export default{
   props: ['value'],
+  computed: {
+    recentUpdates(){
+      return this.$store.getters.recentUpdates;
+    }
+  }
 }
 </script>

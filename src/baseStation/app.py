@@ -12,6 +12,10 @@ from collections import namedtuple
 from struct import unpack
 import time 
 
+# THREAD SOCKETS
+import eventlet
+eventlet.monkey_patch() 
+
 # SETUP FLASK
 app = Flask(__name__,
             static_folder = "./frontend/dist/static",
@@ -64,7 +68,7 @@ def radio_update():
             msg = {
             'name': "location",
             'value': [measurements.latitude, measurements.longitude],
-            'datetime': datetime.strptime(dt,'%d%m%y %H%M%S').isoformat()
+            'time': datetime.strptime(dt,'%d%m%y %H%M%S').isoformat()
             }
             send_and_save(msg)
             msg['name'] = 'current'
@@ -91,10 +95,10 @@ def radio_update():
             msg['name'] = 'wave power'
             msg['value'] = measurements.wave_power
             send_and_save(msg)
-            msg['name'] = 'water temp'
+            msg['name'] = 'water temperature'
             msg['value'] = measurements.water_temp
             send_and_save(msg)
-            msg['name'] = 'air temp'
+            msg['name'] = 'air temperature'
             msg['value'] = measurements.air_temp
             send_and_save(msg)
 
@@ -103,10 +107,10 @@ def send_and_save(measurement):
     """
     sends measurements to front end and saves them in the mongodb
     """
-    if '_id' not in measurement.keys():
-        socketio.emit('buoy_measurement_update', json.dumps(measurement))
-    else:
-        measurement_collection.insert_one(measurement)
+    if '_id' in measurement.keys():
+        measurement.pop('_id')
+    socketio.emit('buoy_measurement_update', json.dumps(measurement))
+    measurement_collection.insert_one(measurement)
 
 def get_results(start_date, end_date, td, measurements):
     """
