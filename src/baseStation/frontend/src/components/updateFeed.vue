@@ -42,7 +42,9 @@ export default{
   props: ['value'],
   computed: {
     recentUpdates(){
-      return this.$store.getters.recentUpdates
+      const x = this.$store.getters.recentUpdates;
+      console.log("update thing", x)
+      return x;
     }
   }
 }
