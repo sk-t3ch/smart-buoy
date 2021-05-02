@@ -6,11 +6,6 @@
 * hardware
 * problems to overcome
 * possibility of accuracy 
-
-
-
-
-
 * [ ] gps
 * [ ] lidar
 * [ ] camera

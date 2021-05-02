@@ -6,5 +6,3 @@
 * [ ] accelerometer 
 * [ ] gyroscope
 
-
-
