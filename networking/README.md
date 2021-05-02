@@ -1,6 +1,0 @@
-# Networking
-
-* radio
-* LoRa
-* Bluetooth
-* 
