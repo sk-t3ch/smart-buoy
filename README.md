@@ -1,9 +1,16 @@
-# [T3chFlicks](https://t3chflicks.org): Smart Buoy
+---
+description: A complete ocean characteristic measuring and analytics system.
+---
 
-[![Generic badge](https://img.shields.io/badge/Live-Demo-red.svg)](https://smart-buoy.t3chflicks.org)
+# Introduction
 
-> A complete ocean characteristic measuring and analytics system.
-![gif_of_buoy](./smart_buoy_thumbnail_square.gif)
+* [ ] show blog posts
+* [ ] show version one setup
+* [ ] breakdown blog posts into more expansive setup
+
+[![Generic badge](https://camo.githubusercontent.com/e2a7c367328954252935922ea3847c4c7b45ed008c37c712cd78a56c9c5723a3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c6976652d44656d6f2d7265642e737667)](https://smart-buoy.t3chflicks.org/)
+
+![gif\_of\_buoy](https://github.com/sk-t3ch/smart-buoy/raw/master/smart_buoy_thumbnail_square.gif)
 
 🎖️ Featured by [Raspberry Pi Blogs](https://www.raspberrypi.org/blog/good-buoy-the-raspberry-pi-smart-buoy/)
 
@@ -17,87 +24,9 @@
 
 🎖️ Second place [Instructables Sensor Contest](https://www.instructables.com/contest/sensors2019/)
 
----
+[https://whimsical.com/smart-buoy-2x7PNzVxmZx7oKikP9o2LP](https://whimsical.com/smart-buoy-2x7PNzVxmZx7oKikP9o2LP)
 
-## `tutorials/`
-### Summary
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./summary_blog_post.md)
-
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-summary-602f9db544bb)
-
-[![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=S-XMT6GDWk8&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=1)
-
- [![Everything Is AWESOME](./yt.png)](https://www.youtube.com/watch?v=aLX4btGs_x8 "Youtube Video")
-
-### 1. Wave and Temperature Measurements
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/1_wave_and_temperature_measurements/blog_post.md)
-
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-making-wave-and-temperature-measurements-%EF%B8%8F-cdda14c52196)
-
-[![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=AUr0UcNb6B8&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=2)
-
-### 2. GPS, Radio, and SD card
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/2_gps_radio_sd/blog_post.md)
-
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-gps-radio-nrf24-and-a-sd-card-module-6029af3a69d)
-
-[![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=xz1ix76U28E&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=3&t=160s)
+![](.gitbook/assets/smart-buoy-2x.png)
 
 
-### 3. Scheduling Power
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/3_scheduling_power/blog_post.md)
 
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-scheduling-power-to-the-system-81a2675fdac0)
-
-[![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=5guIB8_YIGQ&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=4)
-
-
-### 4. Waterproofing, Dashboards and Deploy
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Github-orange.svg)](./tutorials/4_build_deploy/blog_post.md)
-
-[![Generic badge](https://img.shields.io/badge/Blog_Post-Medium-blue.svg)](https://t3chflicks.medium.com/smart-buoy-waterproofing-dashboards-and-deploy-15c730bf9a3a)
-
-[![Generic badge](https://img.shields.io/badge/Youtube-Video-red.svg)](https://www.youtube.com/watch?v=yUjocnaKXys&list=PLoTBNxUNjtjebnBR1B3RfByp8vZtZ6yL7&index=5)
-
----
-
-## `src/` - contains the source code for the whole project
-* `buoy/` contains the code which runs on an Arduino inside the Buoy, as well as the build files (3d model, schematic etc).
-
-* `baseStation/` contains the code for the server, database, and dashboard.
-for the dashboard which is a VueJS application
-
----
-
-## 💡 Product Showcase
-> ![Product](./teaser_2.png)
-> ![Buoy Electronics](src/buoy/electronics/full_build_labelled.png)
-> ![Buoy Electronics](src/buoy/electronics/raspberrypi_receiver_labelled.png)
-> ![Buoy Dashboard Home](dashboard.png)
-> ![Buoy Dashboard Trends](trends.png)
-* Environment
-  * Wave measurements
-    * Size
-    * Period
-    * Power
-    * Direction
-    * Water temperature
-  * Air
-    * Temperature
-    * Humidity
-    * Pressure
-  * Position (GPS)
-* Power
-  * Solar powered
-  * Scheduled time for power based on battery voltage
-* Radio Communication (Range 1KM)
-* Interactive dashboard [![Generic badge](https://img.shields.io/badge/Live-Demo-red.svg)](https://smart-buoy.t3chflicks.org)
-  * Realtime view
-  * Graph historical measurements
-
-
----
-
-This project was created by [T3chFlicks](https://t3chflicks.org) - A tech focused education and services company.
-
----
