@@ -55,5 +55,5 @@
     * [Waterproofing, Dashboards and Deploy 🚱📊](v1/original-blogs/waterproofing-dashboards-and-deploy.md)
   * [Review](v1/review.md)
 * [V2](v2.md)
-* [Buy me a coffee ☕](buy-me-a-coffee.md)
+* [Buy us a coffee ☕](buy-us-a-coffee.md)
 
