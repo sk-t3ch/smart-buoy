@@ -1,5 +1,5 @@
 ---
-description: ddddA complete ocean characteristic measuring and analytics system.
+description: A complete ocean characteristic measuring and analytics system.
 ---
 
 # Introduction
