@@ -8,11 +8,11 @@ Earth is a spherical body composed of a gas and liquid on top of a solid crust a
 
 ![](../.gitbook/assets/image%20%281%29.png)
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%287%29.png)
 
 Earth is located x from the sun. The Earth orbits the Sun at a speed of 365x24 h
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 
 Earth spins on an axis at a speed of 24hours that varies at a level of and a 
 
@@ -20,7 +20,7 @@ Earth spins on an axis at a speed of 24hours that varies at a level of and a
 
 The Sun provides Earth with energy which drives dynamism 
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 EM forces + EM waves
 
@@ -28,31 +28,31 @@ EM forces + EM waves
 
 Earth varies its axis on the orbit with the sun with a period of 90 days \(hint: seasons\)
 
-![](../.gitbook/assets/image%20%286%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 Earth tilt
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 Earth is composed of mostly metals and other materials
 
-![](../.gitbook/assets/image%20%2812%29.png)
+![](../.gitbook/assets/image%20%2815%29.png)
 
 specific property known as magnetism which they attract each other through the electromotive force this interaction gives rise to a global magnetic field. 
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 The mass of different materials also forms a global gravitational field which operates at a level of
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2819%29.png)
 
 The moon is a body composed of x which orbits Earth with a period of 28 days and a variation which gives rise to effects 
 
+![](../.gitbook/assets/image%20%2818%29.png)
+
 ![](../.gitbook/assets/image%20%2813%29.png)
 
-![](../.gitbook/assets/image%20%2810%29.png)
-
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 The Earth has many interacting phenomena
 
