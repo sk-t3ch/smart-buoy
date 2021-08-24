@@ -24,8 +24,6 @@ Earth spins on an axis at a speed of 24hours that varies at a level of and a
 
 The Sun provides Earth with energy which drives dynamism 
 
-![](../.gitbook/assets/image%20%2816%29.png)
-
 EM forces + EM waves
 
 ![](../.gitbook/assets/image%20%283%29.png)
