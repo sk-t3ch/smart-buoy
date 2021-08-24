@@ -8,9 +8,9 @@ What can we measure about these systems?
 
 What will our measurements tell us about the systems?
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2832%29.png)
 
 ## Energy
 
