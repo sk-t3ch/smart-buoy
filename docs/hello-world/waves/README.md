@@ -10,7 +10,7 @@ What will our measurements tell us about the systems?
 
 ![](../../.gitbook/assets/image%20%2820%29.png)
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 ## Energy
 

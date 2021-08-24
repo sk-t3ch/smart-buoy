@@ -50,11 +50,11 @@ specific property known as magnetism which they attract each other through the e
 
 The mass of different materials also forms a global gravitational field which operates at a level of
 
-![](../.gitbook/assets/image%20%2831%29.png)
+![](../.gitbook/assets/image%20%2833%29.png)
 
 The moon is a body composed of x which orbits Earth with a period of 28 days and a variation which gives rise to effects 
 
-![](../.gitbook/assets/image%20%2829%29.png)
+![](../.gitbook/assets/image%20%2830%29.png)
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
